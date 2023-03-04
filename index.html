@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calorias</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Estilos -->
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+  </header>
+  <div class="container">
+  <div class="row">
+   <!----------    COLUMNA IZQUIERDA DEL CONTENIDO        ------->  
+    <div class="col-3"></div>
+    <!----------    COLUMNA MITAD DEL CONTENIDO        -------> 
+    <div class="col-6"><br>
+      <!----------    TITULO PRINCIPAL      -------> 
+      <h1>💪Calculadora de Calorias💪</h1><br>
+    <div class="content">
+      <form id="form">
+
+        <div class="form-group">
+          <label for="name">Nombre: </label>
+          <input type="text" id="name" placeholder="Nombre Completo">
+        </div>
+
+        <div class="form-group">
+          <label for="document_type">Tipo de Documento: </label>
+          <select id="document_type">
+            <option value="Cédula de Ciudadania">Cédula de Ciudadania</option>
+            <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="number_document">Número de documento: </label>
+          <input type="number" id="number_document" />
+        </div>
+
+        <div class="form-group">
+          <label for="genero">Genero: </label>
+          <select id="genero">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="edad">Edad: </label>
+          <input type="number" id="edad" />
+        </div>
+
+        <div class="form-group">
+          <label for="peso">Peso: </label>
+          <input type="number" id="peso" placeholder="Kg"/>
+        </div>
+
+        <div class="form-group">
+          <label for="altura">Altura: </label>
+          <input type="number" id="altura" placeholder="Cm"/>
+        </div>
+
+        <div class="form-group">
+          <label for="activity_level">Nivel de actividad física</label>
+          <select id="activity_level">
+            <option value="1.2">Poco o ningún ejercicio</option>
+            <option value="1.375">Ejercicio ligero (1-3 días a la semana)</option>
+            <option value="1.55">Ejercicio moderado (3-5 días a la semana)</option>
+            <option value="1.725">Ejercicio fuerte (6-7 días a la semana)</option>
+            <option value="1.9">Ejercicio muy fuerte (dos veces al día, entrenamientos muy duros)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Calcular</button>
+        </div>
+     </form>
+      <!----------    COLUMNA DERECHA DEL CONTENIDO        ------->  
+      <div class="result-container" id="result" style="text-align: justify;">
+        </div>
+      </div>
+    </div>
+    <!----------    COLUMNA DERECHA DEL CONTENIDO        ------->  
+    <div class="col-3"></div>
+  </div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/script.js" type="text/javascript"></script>
+</body>
+</html>
